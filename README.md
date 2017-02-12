@@ -1,1 +1,0 @@
-# knasirov.github.io
