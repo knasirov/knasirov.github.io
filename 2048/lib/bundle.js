@@ -94,9 +94,9 @@ class Game {
     let newCurrentScore = parseInt($("#current-score").html()) + value;
     $("#current-score").html(newCurrentScore);
     // console.log($("#current-score").text() + 5);
-    if (parseInt(localStorage.bestScore) < newCurrentScore) {
+    if (parseInt(window.localStorage.bestScore) < newCurrentScore) {
       console.log('add to local');
-      localStorage.setItem('bestScore', newCurrentScore);
+      window.localStorage.setItem('bestScore', newCurrentScore);
     }
 
     $("#current-score").append(`<span class='new-score'>+${value}</span>`);
